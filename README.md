@@ -3,7 +3,7 @@ We don't take responsibility for what you do with this.
 
 ## FORK - ADDED FEATURES THAT DON'T EXIST IN UPSTREAM
 - Automatic Captcha Solving using Captcha Buster extension (click on the captcha and click on the solver button)
-- Script doesn't close anymore (press enter to start the process again after completion)
+- Script doesn't close anymore after its done (press enter to start the process again after completion, this clears cookies too)
 - Script only saves the details after they are entered
 
 # Reddit Account Generator
