@@ -6,7 +6,6 @@ from selenium.webdriver.chrome.options import Options
 from selenium.webdriver import ActionChains
 import random
 import time
-import re
 import string
 import secrets
 import os
@@ -45,10 +44,12 @@ def gen():
     driver.get('https://www.reddit.com/register/')
     driver.find_element_by_id('regEmail').send_keys('pixelbotdev@protonmail.com')
     time.sleep(1)
-    driver.find_element_by_xpath ("//button[contains(text(),'Continue')]").click()
+    driver.find_element_by_xpath ("//button[contains(text(),'Fortsetzen')]").click()
     time.sleep(3)
     driver.find_element_by_id('regUsername').send_keys(finalName)
     driver.find_element_by_id('regPassword').send_keys(password)
+    os.system('cls' if os.name=='nt' else 'clear')
+    print("Please solve the Capture either manually or by pressing the Captcha Buster Button")
 
     dirname = os.path.dirname(__file__)
     text_file_path = os.path.join(dirname, 'namesforreddit.txt')
@@ -58,9 +59,14 @@ def gen():
     text_file.close()
 
 if __name__ == '__main__':
+    amount = 0
     while True:
+        os.system(f'title Accounts Created:{amount}')
         gen()
+        amount += 1
+        print("Press Any Key to start the Process Again")
         input()
+        os.system('cls' if os.name=='nt' else 'clear')
         driver.delete_all_cookies()
 
 # driver.close()
