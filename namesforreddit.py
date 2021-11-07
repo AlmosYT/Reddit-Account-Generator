@@ -43,7 +43,7 @@ def gen():
 
     # REDDIT ACCOUNT CREATION
     driver.get('https://www.reddit.com/register/')
-    driver.find_element_by_id('regEmail').send_keys('mail@mail.mail')
+    driver.find_element_by_id('regEmail').send_keys('pixelbotdev@protonmail.com')
     time.sleep(1)
     driver.find_element_by_xpath ("//button[contains(text(),'Continue')]").click()
     time.sleep(3)
