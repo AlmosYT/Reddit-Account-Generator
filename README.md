@@ -1,3 +1,11 @@
+# USE ONLY RECOMMENDED WITH PIXELBOT RELATED PROJECTS
+We don't take responsibility for what you do with this.
+
+## FORK - ADDED FEATURES THAT DON'T EXIST IN UPSTREAM
+- Automatic Captcha Solving using Captcha Buster extension (click on the captcha and click on the solver button)
+- Script doesn't close anymore after it's done (press enter to start the process again after completion, this clears cookies too)
+- Script only saves the details after they are entered
+
 # Reddit Account Generator
  **WHAT IS IT?**
  
@@ -12,11 +20,3 @@
  
  Only Selenium and webdriver-manager (pip install selenium && pip install webdriver-manager).
  A file named "namesforreddit.txt" should be in the same folder as the .py executable.
- 
- **UPDATES**
- 
-_23.7.2021_ - 
- Reviewed the almost year-old code and made some small changes. Now, it should be more stable, as it doesn't use XPaths anymore.
- Also, because I've added Webdriver-Manager there should be less (or none?) inconstencies between the driver versions, as it automatically updates the version of the webdriver with every launch.
- 
- Hopefully this is useful; feedback kindly appreciated :)
